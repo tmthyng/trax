@@ -2,22 +2,21 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Trax</title>
+    
+    <title>Trax.</title>
 
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    
     <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    
+
     <%= javascript_importmap_tags %>
   </head>
 
   <body>
-    <main class="container relative mx-auto min-h-screen h-auto">
-      <%= render 'shared/header' %>
+    <main class="container mx-auto flex">
       <%= yield %>
-      <%= render 'shared/footer' %>
     </main>
   </body>
 </html>
